@@ -1,0 +1,77 @@
+Bowling is first bit of code below:
+________________________________
+
+package com.daythree;
+
+public class Bowling {
+
+	public static void main(String[] args) {
+
+		int framesBowled = 10;
+		int pins = 11;
+
+		for (int i = 1; i < 11; i++) {
+			System.out.println("Frame " + i + " - ");
+
+			for (int j = 0; j < 11; j++)
+				;
+
+			int rollOne = (int) ((Math.random() * pins));
+			int rollTwo = (int) ((Math.random() * (pins - rollOne)));
+			int frameScore = rollOne + rollTwo;
+			
+			if (rollOne == 10) {
+				System.out.println("Roll 1: " + rollOne + "     Roll 2: N/A" + "     Score: " + frameScore);
+			} else
+				System.out.println("Roll 1: " + rollOne + "     Roll 2: " + rollTwo + "     Score: " + frameScore);
+		}
+
+	}
+
+}
+
+
+
+_______________________________________________________________________________________________________________________________________________________________________________________________
+
+
+FizzBuzzLab is below here:
+_________________________
+
+package com.daythree;
+
+public class FizzBuzzLabVersion {
+
+	public static void main(String[] args) {
+		
+		for (int i = 1; i <= 330; i++) {
+			if(((i % 3) == 0) && ((i % 5) == 0) && ((i % 7) == 0))	{
+				System.out.println("FizzBuzzBang");
+				
+			} else if(((i % 3) == 0) && ((i % 5) == 0)) {
+				System.out.println("FizzBuzz");
+				
+			} else if(((i % 5) == 0) && ((i % 7) == 0)) {
+				System.out.println("BuzzBang");
+				
+			} else if(((i % 3) == 0) && ((i % 7) == 0)) {
+				System.out.println("FizzBang");
+				
+			} else if((i % 3) == 0) {
+				System.out.println("Fizz");
+				
+			} else if((i % 5) == 0) {
+				System.out.println("Buzz");
+				
+			} else if((i % 7) == 0) {
+				System.out.println("Bang");
+				
+			} else {
+				System.out.println(i);
+			}
+				
+
+	}
+
+}
+}
